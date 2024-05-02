@@ -9,6 +9,12 @@ app = Flask(__name__)
 def home():
     return 'Hello, World!'
 
+
+@app.route('/test')
+def test():
+    return 'this is the test route'
+
+
 @app.route('/chat', methods=['POST'])
 def chat():
     if request.method == 'POST':
