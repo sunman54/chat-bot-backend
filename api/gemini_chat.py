@@ -6,11 +6,11 @@ genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
 
 model = genai.GenerativeModel('gemini-pro')
 
-def chat(promt):
+def gemini(promt):
     return model.generate_content(promt).text
 
 
 
 if __name__ == '__main__':
-    result = chat('What is the best AI chat bot ?')
+    result = gemini('What is the best AI chat bot ?')
     print(result)
