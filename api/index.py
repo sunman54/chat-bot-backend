@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from gemini_chat import gemini
+from api.gemini_chat import gemini
 
 
 
