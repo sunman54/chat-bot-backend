@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from api.gemini_chat import gemini
 
-
+CORS(app)
 
 app = Flask(__name__)
 
